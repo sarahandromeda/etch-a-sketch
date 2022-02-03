@@ -18,14 +18,15 @@ const resetGrid = function () {
     }
 }
 
-const fadeColor = function (target) {
+const fadeColor = function (e) {
     let i = 0;
-    let interval = setInterval(paint, 5000);
+    const targetElem = e.target;
+    let interval = setInterval(paint, 1000);
     function paint() {
         if (i == COLORS.length) {
             clearInterval(interval);
         } else {
-            target.style.backgroundColor = COLORS[i];
+            targetElem.style.backgroundColor = COLORS[i];
             i++;
         }
     }
@@ -36,9 +37,7 @@ const setFade = function () {
     const fadeToggle = document.getElementById("noFade");
     if (fadeToggle.checked == false) {
         fadeTiles.forEach( (fadeTile) => {
-            fadeTile.addEventListener("mouseleave", () => {
-                fadeColor(fadeTile)
-            });
+            fadeTile.addEventListener("mouseleave", fadeColor);
         })
     };
 }
@@ -63,6 +62,21 @@ changeGrid.addEventListener("change", (e) => {
         drawGrid(e.target.value);
         setColor();
         setFade();
+    }
+})
+
+const disableFade = document.getElementById("noFade");
+disableFade.addEventListener("change", (e) => {
+    if (disableFade.checked == true) {
+        const gridTiles = document.querySelectorAll("#tile");
+        gridTiles.forEach( (elem) => {
+            elem.removeEventListener("mouseleave", fadeColor)
+        })
+    } else {
+        const gridTiles = document.querySelectorAll("#tile");
+        gridTiles.forEach( (elem) => {
+            elem.addEventListener("mouseleave", fadeColor)
+        })
     }
 })
 
