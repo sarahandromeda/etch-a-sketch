@@ -1,0 +1,39 @@
+* {
+    background-color: #FFF;
+}
+
+
+.etch {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 5%;
+    padding: 5%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.change-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.change-fade {
+    display: flex;
+    gap: 10px;
+}
+
+#gridSize {
+    width: 50px;
+}
+
+.grid-container {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    border: solid 2px #154360;
+}
