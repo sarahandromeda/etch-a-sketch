@@ -46,6 +46,10 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    box-shadow: 0px 4px 8px 0 #0000008f;
+    height: 125px;
+    width: 125px;
+    padding-top: 5px;
 }
 
 #customColor {
@@ -53,6 +57,10 @@
     width: 75px;
     border: none;
     padding: 0px;
+}
+
+.custom label {
+    text-align: center;
 }
 
 .colors button {
@@ -66,6 +74,10 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    box-shadow: 0px 4px 8px 0 #0000008f;
+    height: 125px;
+    width: 125px;
+    padding-top: 5px;
 }
 
 .rainbow {
@@ -73,16 +85,32 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    box-shadow: 0px 4px 8px 0 #0000008f;
+    height: 125px;
+    width: 125px;
+    padding-top: 5px;
 }
 
 #greyscale {
     background-color: grey;
 }
 
+.grey label {
+    padding: 5px;
+}
+
 #rainbow {
     background-color: red;
 }
 
+.rainbow label {
+    padding: 5px;
+}
+
 #gridSize {
     width: 75px;
+}
+
+.selected {
+    box-shadow: 0px 4px 8px 0 #1683088f;
 }
