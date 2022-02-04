@@ -12,13 +12,27 @@
     <div class="etch">
         <div class="content">
             <h1>Etch-a-Sketch</h1>
-            <div class="change-grid">
-                <label for="gridSize">Change the size of grid</label>
-                <input id="gridSize" type="number" max=100 min=16 value=16>
+            <div class="colors">
+                <div class="custom">
+                    <input id="customColor" type="color" value="#154360">
+                    <label for="customColor">Custom Color</label>
+                </div>
+                <div class="grey">
+                    <button id="greyscale"></button>
+                    <label for="greyscale">Greyscale</label>
+                </div>
+                <div class="rainbow">
+                    <button id="rainbow"></button>
+                    <label for="rainbow">Rainbow</label>
+                </div>
             </div>
-            <div class="change-fade">
-                <label for="noFade">Disable Fading?</label>
-                <input id="noFade" type="checkbox" name="fade" value="off">
+            <div class="change-grid">
+                <label for="gridSize">Grid Size</label>
+                <input id="gridSize" type="range" max=100 min=2 value=16>
+            </div>
+            <div class="enable-fade">
+                <label for="enableFade">Enable Fading?</label>
+                <input id="enableFade" type="checkbox" name="fade" value="off" unchecked>
             </div>
         </div>
         <div class="grid-container">

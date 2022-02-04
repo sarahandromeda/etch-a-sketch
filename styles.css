@@ -11,12 +11,6 @@
     padding: 5%;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .change-grid {
     display: flex;
     gap: 10px;
@@ -27,13 +21,68 @@
     gap: 10px;
 }
 
-#gridSize {
-    width: 50px;
-}
-
 .grid-container {
     display: grid;
     height: 500px;
     width: 500px;
     border: solid 2px #154360;
+    flex-shrink: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+.colors {
+    display: flex;
+    gap: 20px;
+}
+
+.custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#customColor {
+    height: 75px;
+    width: 75px;
+    border: none;
+    padding: 0px;
+}
+
+.colors button {
+    height: 75px;
+    width: 75px;  
+    border: none;   
+}
+
+.grey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.rainbow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#greyscale {
+    background-color: grey;
+}
+
+#rainbow {
+    background-color: red;
+}
+
+#gridSize {
+    width: 75px;
 }
