@@ -133,9 +133,14 @@ const setFade = function () {
 
 const selectedOn = function (e) {
     selectedOff();
-    const div = e.target.parentElement;
+    if (e.target.firstElementChild) {
+        const div = e.target;
+        div.classList.add("selected");
+    } else {
+        const div = e.target.parentElement;
+        div.classList.add("selected");
+    }
     console.log(div);
-    div.classList.add("selected");
 }
 
 const selectedOff = function () {
