@@ -41,6 +41,14 @@
     gap: 20px;
 }
 
+.colors div {
+    transition: transform 0.3s;
+}
+
+.colors div:hover {
+    transform: scale(1.05);
+}
+
 .custom {
     display: flex;
     flex-direction: column;
