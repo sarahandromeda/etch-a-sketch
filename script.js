@@ -46,7 +46,6 @@ const goCustomColor = function () {
     removeListeners(tiles);
     customSet = true;
     tiles.forEach( (tile) => {
-        // tile.style.backgroundColor = "#FFFFFF";
         tile.addEventListener("mouseenter", setCustomColor);
     })
 }
@@ -140,7 +139,6 @@ const selectedOn = function (e) {
         const div = e.target.parentElement;
         div.classList.add("selected");
     }
-    console.log(div);
 }
 
 const selectedOff = function () {
