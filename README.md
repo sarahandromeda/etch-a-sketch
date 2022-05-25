@@ -1,2 +1,3 @@
 # etch-a-sketch
-A simple webpage that creates a grid that you can color tiles of the grid by hovering the mouse over tiles. 
+Color the tiles of the grid by hovering your mouse over them.
+You can change the colorss, size of the grid, and enable fading of the colors.
